@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buyer_name"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#2B3D4D"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_perm_identity_black_24dp"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buyer_location"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#2B3D4D"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_location_on_black_24dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buyer_website"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#2B3D4D"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_language_black_24dp"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buyer_mail"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#2B3D4D"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_email_black_24dp"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buyer_contact"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#2B3D4D"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_perm_contact_calendar_black_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buyer_products"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#2B3D4D"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_shopping_cart_black_24dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

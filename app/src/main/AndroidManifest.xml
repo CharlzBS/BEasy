@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rd.sidedrawerexample"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BEasy"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:supportsRtl">
+        <activity
+            android:name=".MainActivity"
+            android:label="BEasy"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BillEditorActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity"
+            android:label="Add Bill">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".PaymentsActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity"
+            android:label="Payments">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".PaymentEditorActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".PaymentsActivity"
+            android:label="Add Payment">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Buyers"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity"
+            android:label="Buyers">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".BuyerEditor"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".Buyers"
+            android:label="Add Buyer">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".BuyerInfo"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".Buyers"
+            android:label="Buyer Info">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Suppliers"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity"
+            android:label="Suppliers">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".SupplierEditor"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".Suppliers"
+            android:label="Add Supplier">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

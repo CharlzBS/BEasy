@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Layout for the editor -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".BillEditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/serial_number"
+            style="@style/CategoryStyle" />
+
+
+
+            <!-- Name field -->
+            <TextView
+                android:id="@+id/bill_sno"
+                android:text="101"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="4dp"
+                 />
+
+    </LinearLayout>
+
+
+    <!-- Layout for date-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/date"
+            style="@style/CategoryStyle" />
+
+
+
+        <!-- Name field -->
+        <TextView
+            android:id="@+id/bill_date"
+            android:text="26 Jan 2017"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/supplier"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_supplier_name"
+                android:hint="@string/hint_supplier_name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <!-- Buyer layout-->
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/buyer"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_buyer_name"
+                android:hint="@string/hint_buyer_name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Buyer layout-->
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/bill_number"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_bill_number"
+                android:hint="@string/hint_bill_number"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Measurement category -->
+    <LinearLayout
+        android:id="@+id/container_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/category_amount"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+
+            <!-- Weight field -->
+            <EditText
+                android:id="@+id/edit_bill_amount"
+                android:hint="@string/hint_bill_amount"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Units for weight (kg) -->
+            <TextView
+                android:id="@+id/label_weight_units"
+                android:text="@string/unit_bill_amount"
+                style="@style/EditorUnitsStyle"/>
+        </RelativeLayout>
+    </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select bill image"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/camera"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Camera"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Camera"
+                    android:src="@drawable/camera"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/galery">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gallery"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gallery"
+                    android:src="@drawable/gallery"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

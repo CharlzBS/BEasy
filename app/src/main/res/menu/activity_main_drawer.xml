@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bills"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Bills" />
+        <item
+            android:id="@+id/nav_payments"
+            android:icon="@drawable/ic_payment_black_24dp"
+            android:title="Payments" />
+        <item
+            android:id="@+id/nav_buyers"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="Buyers" />
+        <item
+            android:id="@+id/nav_suppliers"
+            android:icon="@drawable/ic_people_outline_black_24dp"
+            android:title="Suppliers" />
+    </group>
+
+    <group android:checkableBehavior="single">
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Settings" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout24"
+                android:title="Sign Out" />
+
+        </menu>
+    </item>
+    </group>
+
+</menu>
